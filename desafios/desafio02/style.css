@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import url('FonteBLock/Fonstars-4Bo0p.otf');
+@font-face {
+      font-family: 'BLOCK';
+      src: url('../desafio02/FonteBLock/Fonstars-4Bo0p.otf') format('opentype');
+      font-weight: lighter;}
+    
+    :root{
+        --fonte-BLOCK:'BLOCK'
+
+    }
+
+    h1.BLOCK{
+        font-family: var(--fonte-BLOCK);
+        color: rgb(237, 36, 41);
+        font-weight: lighter;
+    }
+
+    p{
+        font-family:var(--fonte-BLOCK)
+    }
