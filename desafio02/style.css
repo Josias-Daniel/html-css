@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url('FonteBLock/Fonstars-4Bo0p.otf');
+@font-face {
+      font-family: 'BLOCK';
+      src: url('../desafio02/FonteBLock/BebasNeue-Regular.otf') format('opentype');
+      font-weight: bolder;}
+
+      *{
+        margin: 0px;
+        padding: 0px;
+      }
+
+      :root{
+        --fonte1: Arial, Helvetica, sans-serif;
+        --fonte-BLOCK: 'BLOCK'
+        
+    }
+
+      html, body{
+        min-height: 100%vh;background-color: rgb(0, 0, 0);
+        font-size: 1.4em;
+      }
+    
+    header{
+        background-color: black;
+        text-align: center;
+    }
+
+    header > h1.BLOCK{
+        padding-top: 50px;
+        font-family: var(--fonte-BLOCK);
+        font-size: 15vh;
+        color: rgb(237, 36, 41);
+        font-weight: lighter;
+    }
+
+    header > h2.BLOCK{
+        padding-bottom: 50px;
+            font-family: var(--fonte-BLOCK);
+            font-weight: lighter;
+            color: white;
+        }
+
+
+        section{
+            border-radius: 25px;
+            text-shadow: 3px 2px 0px rgb(63, 0, 0);
+            color: rgb(255, 0, 0);
+            text-align: center;
+            padding-left: 35px;
+            padding-right: 35px;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            line-height: 2em;
+
+
+        }
+        
+        section.imagen {
+
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            padding-left: 2;
+            padding-bottom: 10px;
+            margin: 10px;
+            border-radius: 25px;
+            background-color: rgba(0, 0, 0, 0.103);
+        }
+
+        section#img1{ 
+            background-image: url(imagens/Barou\ 1.jpg);
+            background-position: center;
+
+        }
+        section#img2{ 
+            background-image: url(imagens/Barou\ 2.jpg);
+            background-position: center;
+
+        }
+        section#img3{ 
+            background-image: url(imagens/Barou\ 3.jpg);
+            background-position: center;
+
+        }
+
+        div.video{
+            padding-bottom: 200px;
+            background-color: brown;
+            margin-bottom: 100px;
+            margin: 0px -60px;
+            padding-bottom: 45%;
+            border-radius: 25px;
+            position: relative;
+        
+        
+        }
+        
+        div.video > iframe{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            height: 90%;
+            width: 90%;
+        
+        
+        }
+
+        div.fundoT{
+            background-color: rgba(0, 0, 0, 0.226);
+            border-radius: 35px;
+        }
+
+    p{
+        font-family:var(--fonte-BLOCK)
+    }
+    footer{
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        color: white;
+    }
+    footer a{
+        color: white;
+        text-decoration: none;
+    }
+    footer a:hover{
+        color: rgb(241, 0, 0);
+        text-decoration: underline;
+        transition: 0.75s;
+        
+    }
+    
