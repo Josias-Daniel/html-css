@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td,th{
+            padding: 15px;
+            border: 2px solid black;
+        }
+
+        thead,tfoot{
+
+            background-color: aquamarine;
+        }
+        td.num{
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+<!--
+    ANATOMIA PARA TABELAS GRANDES
+    TABLE
+     THEAD
+        TR, TD ,TH
+     TBODY
+        TR, TD ,TH
+     TFOOT
+        TR, TD ,TH
+-->
+        <table>
+            <caption>estados e populacao</caption>
+            <thead>
+
+                <tr>
+                    <th scope="col">estado</th>
+                    <th scope="col">populacao</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+<tr>
+    
+ <td>sao paulo</td>
+<td class="num">Numero :/ </td>
+</tr>
+<tr>
+    <td>rio de janeiro</td>
+    <td class="num">numero pin</td>
+</tr>
+<tr>
+    <td>minas gerais</td>
+    <td class="num">numero the</td>
+</tr>
+            </tbody>
+
+            <tfoot>
+
+                <tr>
+                    <th scope="row">total de dados</th>
+                    <td>0000</td>
+                </tr>
+            </tfoot>
+        </table>
+</body>
+</html>
