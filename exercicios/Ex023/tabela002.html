@@ -12,18 +12,34 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td,th{
             padding: 15px;
             border: 2px solid black;
         }
-
-        thead,tfoot{
-
-            background-color: aquamarine;
+        thead > tr > th{
+            color: white;
+            position: sticky;
+            top: 19px;
+            border: 2px solid black ;
+            background-color: crimson;
+        }
+        caption{
+            top: 0px;
+            background-color: black;
+            color: white;
+            position: sticky;
+        }
+        tbody > tr:nth-child(2n-1){
+            background-color: rgb(80, 0, 0);
+            color: white;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgb(255, 160, 160);
         }
         td.num{
-            background-color: rgb(255, 0, 0);
+            text-align: right;
         }
     </style>
 </head>
@@ -64,6 +80,55 @@
     <td>minas gerais</td>
     <td class="num">numero the</td>
 </tr>
+<tr>
+    
+    <td>sao paulo</td>
+   <td class="num">Numero :/ </td>
+   </tr>
+   <tr>
+       <td>rio de janeiro</td>
+       <td class="num">numero pin</td>
+   </tr>
+   <tr>
+       <td>minas gerais</td>
+       <td class="num">numero the</td>
+   </tr><tr>
+    
+    <td>sao paulo</td>
+   <td class="num">Numero :/ </td>
+   </tr>
+   <tr>
+       <td>rio de janeiro</td>
+       <td class="num">numero pin</td>
+   </tr>
+   <tr>
+       <td>minas gerais</td>
+       <td class="num">numero the</td>
+   </tr><tr>
+    
+    <td>sao paulo</td>
+   <td class="num">Numero :/ </td>
+   </tr>
+   <tr>
+       <td>rio de janeiro</td>
+       <td class="num">numero pin</td>
+   </tr>
+   <tr>
+       <td>minas gerais</td>
+       <td class="num">numero the</td>
+   </tr><tr>
+    
+    <td>sao paulo</td>
+   <td class="num">Numero :/ </td>
+   </tr>
+   <tr>
+       <td>rio de janeiro</td>
+       <td class="num">numero pin</td>
+   </tr>
+   <tr>
+       <td>minas gerais</td>
+       <td class="num">numero the</td>
+   </tr>
             </tbody>
 
             <tfoot>
@@ -74,5 +139,6 @@
                 </tr>
             </tfoot>
         </table>
+        
 </body>
 </html>
