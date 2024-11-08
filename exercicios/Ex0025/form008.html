@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário com um pouco de JS</h1>
+    <form action="cadastro.php">
+
+        <p>
+            <label for="Inum1">Número 1</label>
+            <input type="number" name="num1" id="Inum1" min="0" max="10" required oninput="Isoma.innerHTML = Number(Inum1.value) + Number(Inum2.value)">
+        </p>
+        <p>
+            <label for="Inum2">Número 2</label>
+            <input type="number" name="num2" id="Inum2" min="0" max="10" required oninput="Isoma.innerHTML = Number(Inum1.value) + Number(Inum2.value)">
+        </p>
+
+        <p>
+            <label for="Isoma">Soma:</label>
+            <output id="Isoma" name="soma">0</output>
+        </p>
+        <p>
+            <label for="Iopn">Opiniao</label>
+            <input type="range" id="Iopn" name="opn" min="0" max="100" value="75" oninput="Ival.innerHTML = Number(Iopn.value)">
+            <output id="Ival">75</output>
+        </p>
+
+        <p>
+            <label for="Iano">Em qual ano voce nasceu?</label>
+            <input type="number" name="ano" id="Iano" min="1900" max="2024" oninput="calcIdade()">
+        </p>
+        <p>
+            <label for="Iidade"> Sua idade é:</label>
+            <output id="Iidade">0</output>
+        </p>
+
+        <script>
+            function calcIdade() {
+                let atual = new Date().getFullYear()
+                Iidade.innerHTML = Number(atual) - Number(Iano.value)
+            }
+        </script>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+            </form>
+</body>
+</html>

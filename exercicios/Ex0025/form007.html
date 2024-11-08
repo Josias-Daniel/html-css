@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Testando Formulário sem ser input kkkksk</h1>
+    <form action="cadastro.php">
+        <p>
+            <label for="Iesta">Estado:</label>
+            <select name="esta" id="Iesta">
+                <option value=""select>---escolha-aqui---</option>
+                <optgroup label="Regiao Sudeste">
+                    <option value="MN">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">Sao Paulo</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="Iprof">Profissao:</label>
+            <input type="text" name="prof" id="Iprof" list="listprof">
+            <datalist id="listprof">
+                <option value="f">Adiminstrador</option>
+                <option value="">Professor</option>
+                <option value="">Engenheiro</option>
+                <option value="">Gamer</option>
+                <option value="">Cozinheiro</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="Imsg">Mensagem:</label> <br>
+            <textarea name="msg" id="Imsg" cols="50" rows="10"></textarea> 
+
+        </p>
+
+<input type="submit" value="Enviar">
+<input type="reset" value="Limpar">
+    </form>
+</body>
+</html>
