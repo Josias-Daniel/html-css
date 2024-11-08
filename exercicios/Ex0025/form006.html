@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Testeiei de Forms man kkkksk</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="Icor">Cor:</label>
+            <input type="color" name="cor" id="Icor" required value="#61003D">
+        </p>
+
+        <p>
+            <label for="Iniv">Nivel de satisfaCao</label>
+            <input type="range" name="niv" id="Iniv" min="1" max="10" value="8">
+        </p>
+
+        <p>
+            <label for="Ifoto">Foto de perfil</label>
+            <input type="file" name="foto" id="Ifoto" required>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
