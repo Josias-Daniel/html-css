@@ -21,10 +21,6 @@ main h1{
     color: black;
     text-shadow: none;
 }
-main::after{
-    content: ;
-}
-
     img#phone{display: none;}
     img#tablet{display: none;}
     img#tv{display: none;}
