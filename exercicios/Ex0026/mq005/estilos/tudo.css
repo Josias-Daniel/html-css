@@ -1,6 +1,33 @@
 @charset "UTF-8";
 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
 
+
+}
+
+@media screen and (min-width: 800px){
+
+    span.material-symbols-outlined{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+        padding: 0px 10px 0px 10px;
+    }
+
+    main{
+        max-width: 750px;
+    }
+
+}
 
 html, body{
     background-color: rgb(255, 255, 215);
